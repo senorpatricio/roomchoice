@@ -1,0 +1,60 @@
+.middle-section {
+	width: 100%;
+	height: 233px;
+	margin: 20px 0 0 0;
+	background: url(../img/gradient-slice.png) repeat-x;
+	
+	.middle-container {
+		width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+
+		.middle-description {
+			float: left;
+			width: 600px;
+			padding: 30px;
+			color: white;
+			line-height: 20px;
+
+			h3 {
+				margin: -2px 0px 4px 11px;
+				color: white;
+			}
+
+			p {
+				margin: -3px 0px 13px 15px;
+				font-size: 13px;
+				color: white;
+			}
+
+			ul {
+				margin: -4px 0 0px 22px;
+				font-size: 13px;
+				color: white;
+				list-style: none;
+			}
+		}
+
+		.middle-example {
+			margin: 9px 0 0 0;
+			float: right;
+			width: 225px;
+
+			.titan-logo {
+				margin: 0 0px 0 -7px;
+			}
+
+			.pro-design {
+				margin: 4px 0 0 5px;
+			}
+
+			.high-end {
+				margin: 7px 0px 7px -8px;
+			}
+
+			.see-our-work {
+				margin: 9px 0px 0px 1px;
+			}
+		}
+	}
+}

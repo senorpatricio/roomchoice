@@ -1,0 +1,40 @@
+.lower-display .footer {
+	height: 120px;
+	margin: 80px 1px 0px 0px;	
+
+	.company-bar {
+		position: absolute;
+		display: inline;
+		margin: -100px 0 0 34px;
+
+		ul {
+			margin: 0;
+
+			li {
+				display: inline;
+				margin: 0 0 0 18px;
+			}
+		}
+	}
+}
+
+
+.lower-display .blue-bar {
+	position: absolute;
+	width: 888px;
+	margin: -69px 0px 0 -18px;
+}
+
+.lower-display .blue-bar li {
+	display: inline;
+	color: white;
+	font-size: 12px;
+}
+
+.lower-display .blue-bar .contact {
+	float: left;
+}
+
+.lower-display .blue-bar .our-clients {
+	float: right;
+}

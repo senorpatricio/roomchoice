@@ -1,0 +1,271 @@
+body {
+	background-color: #E8E8E8;
+	font-family: Helvetica;
+}
+
+.top-display, .lower-display {
+	width: 1000px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.header {
+	width: 100%;
+	height: 40px;
+}
+
+
+#header-left-logo {
+	float: left;
+}
+
+#header-right-logo {
+	float: right;
+}
+
+.navbar {
+	display: block;
+	text-align: right;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 2px solid gray;
+}
+
+#nav-button {
+	margin-right: 5px;
+}
+
+.navbar ul li {
+	display: inline;
+	margin-right: 5px;
+	color: gray;
+}
+
+#banner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid white;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.middle-section {
+	width: 100%;
+	height: 233px;
+	margin-top: 30px;
+	background: url(../img/gradient-slice.png) repeat-x;
+}
+
+.middle-section .middle-container {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.middle-section .middle-container #middle-description {
+	float: left;
+	width: 580px;
+	padding: 30px;
+	color: white;
+}
+
+.middle-section .middle-container #middle-description p {
+	font-size: 15px;
+	color: white;
+}
+
+.middle-section .middle-container #middle-example {
+	padding: 30px;
+	float: right;
+	width: 200px;
+}
+
+.clear {
+	clear: both;
+}
+
+.lower-display {
+	width: 950px;
+	display: block;
+	margin: auto;
+}
+
+#photo {
+	padding-bottom: 10px;
+}
+
+.social-banner {
+	border-bottom: 1px solid gray;
+	height: 50px;
+}
+
+#social-left {
+	font-size: 22px;
+	color: gray;
+	float: left;
+	padding: -10px;
+}
+
+.social-banner img {
+	margin-left: 10px;
+}
+
+#social-right {
+	float: right;
+	color: gray;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.who-section {
+	height: 350px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.who-one {
+	width: 205px;
+	height: 390px;
+	margin: 15px;
+	float: left;
+	padding-top: 10px;
+}
+
+.who-two {
+	width: 205px;
+	height: 390px;
+	margin: 15px;
+	float: left;
+	padding-top: 10px;
+}
+
+
+.who-three {
+	width: 205px;
+	height: 390px;
+	margin: 15px;
+	float: right;
+	padding-top: 10px;
+}
+
+.who-four {
+	width: 205px;
+	height: 390px;
+	margin: 15px;
+	float: right;
+	padding-top: 10px;
+}
+
+#flag {
+	border: 3px solid white;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+#icon {
+	float: left;
+	margin-right: 4px;
+	margin-left: 13px;
+}
+
+#blurb {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#who-title {
+	color: #2773ab;
+	font-style: bold;
+	margin-top: 5px;
+}
+
+.seo-content {
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.seo-content1 {
+	width: 190px;
+	margin-right: auto;
+	margin-left: 10px;
+	float: left;
+}
+
+.seo-content2 {
+	width: 190px;
+	margin-right: auto;
+	margin-left: 5px;
+	float: left;
+}
+
+.seo-content3 {
+	width: 190px;
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+}
+
+#seo-title {
+	font-size: 18px;
+	color: #2773ab;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.seo-left-top {
+	width: 600px;
+	height: 300px;
+	margin: 10px;
+/*	background: orange;*/
+	float: left;
+}
+
+.seo-right {
+	width: 300px;
+	height: 510px;
+	margin: 10px;
+	background: white;
+	float: right;
+	border: 5px silver solid;
+}
+
+.seo-content-right1 {
+	width: 280px;
+	height: 300px;
+}
+
+.seo-content-right2 {
+	width: 280px;
+	height: 170px;
+	padding: 10px;
+}
+
+.seo-content-right2 img {
+	margin: 10px 51px 10px 50px;
+}
+
+.seo-content-right2 p {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: gray;
+	text-align: center;
+}
+.seo-left-bottom {
+	width: 580px;
+	height: 180px;
+	margin: 10px;
+	padding: 10px;
+/*	background: orange;*/
+	float: left;
+}
+
+
+.footer {
+	height: 110px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+

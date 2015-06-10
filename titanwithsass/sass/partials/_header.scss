@@ -1,0 +1,23 @@
+.header {
+	height: 50px;
+
+		.header-left {
+			width: 160px;
+			
+			img {
+				margin: 19px 0 0 0;
+			}
+		}
+
+		.header-right {
+
+			img {
+				float: right;
+				margin: -68px 7px 0 0;
+			}
+		}
+	.topline {
+		margin: -21px 11px 0 0;
+		float: right;
+	}
+}

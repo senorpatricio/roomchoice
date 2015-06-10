@@ -1,0 +1,114 @@
+/*  main.css  */
+body {
+	background-color: #ebe5e8;
+	font-family: Helvetica;
+}
+
+
+.logo-bar {
+	height: 20px;
+}
+
+.left-top {
+	/*background-color: blue;*/
+}
+
+.middle-top {
+/*	background-color: green;*/
+}
+
+.right-top {
+/*	background-color: red;*/
+}
+
+.topline {
+	/*float: right;  *//*****/
+}
+
+.navbar {
+
+}
+
+.navbar .col-md-4 {
+	height: 30px;
+	text-align: right;
+	font-size: 13px;
+}
+
+.navbar .col-md-4 ul li {
+	display: inline;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    height: 440px;
+    margin: auto;
+}
+
+.middle-container {
+	color: white;
+	height: 233px;
+	background-image: url(../img/gradient-slice.png);
+	background-repeat: repeat-x;
+	margin: 30px 0 0 0;
+}
+
+.middle-container h3 {
+	margin: 10px 0 0 0;
+}
+
+.middle-container p {
+	margin: 20px 0 0 0;
+	font-size: 13px
+}
+
+.middle-container p {
+	margin: 20px 0 0 0;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+.middle-container ul li {
+	font-size: 13px;
+	margin: 10px 0 0 0;
+}
+
+.get-social {
+	text-align: right;
+}
+
+.row .col-md-3 .title{
+	font-size: 13px;
+	margin: 4px 0 0 0;
+}
+
+.row .col-md-8 .title {
+	font-size: 13px;
+	line-height: 1.2;
+}
+
+.row .col-md-8 .row .col-md-12 {
+	margin: 15px 0 0 0;
+}
+
+.row .pricing-area {
+	border: solid gray 2px;
+	background-color: white;
+	height: 318px;
+	margin: 0 0 0 40px;
+}
+
+.row .pricing-area .top {
+	height: 70%;
+	text-align: center;
+}
+
+.row .pricing-area .bottom {
+	text-align: center;
+	font-size: 12px;
+}
+
+.row .pricing-area .bottom .pricing {
+	padding: 5px 20px 5px 20px;
+}

@@ -1,0 +1,82 @@
+.lower-display .social-banner {
+	border: 0 0 1px 0 solid $gray;
+	height: 60px;
+
+	.social-left {
+		font-size: 21px;
+		color: $gray;
+		float: left;
+		margin: -19px 18px 0 23px;
+
+		.some-words{
+			list-style: none;
+			margin: 22px 0 0 -41px;
+
+			li {
+				display: inline;
+			}
+			img {
+				margin: 9px 0 0 0;
+			}
+		}
+	}
+
+
+	.social-right {
+		float: right;
+		color: gray;
+		font-size: 13px;
+		padding: 10px;
+		margin: -9px 16px 0 0;
+
+		img {
+			margin: 0 0 0 7px;
+		}
+	}
+}
+
+
+.lower-display .who-section {
+	height: 350px;
+	margin: 0 auto 0 auto;
+	padding: 10px 0 0 0;
+
+	.shadow {
+		position: absolute;
+		z-index: -25;
+		margin: -8px 0px 0px 0px;
+	}
+
+	.who-one {
+		width: 205px;
+		height: 300px;
+		margin: 1px 10px 1px 10px;
+		float: left;
+
+		.flag {
+			margin: 0 7px 0 16px;
+		}
+
+		.who-title {
+			color: $steel-blue;
+			font-style: bold;
+			font-size: 14px;
+			margin: 0 0 0 0;
+		}
+
+		.blurb {
+			padding: 0 0 0 17px;
+		  font-size: 13px;
+		  color: $gray;
+		  line-height: 1.4;
+		  margin: 2px 0 0 0;
+		  text-align: justify;
+		}
+
+		.icon {
+			float: left;
+			margin: 0 8px 0 18px;
+		}
+	}
+}
+
