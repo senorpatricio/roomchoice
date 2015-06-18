@@ -1,12 +1,32 @@
 .navbar {
-
-	ul {
-		text-align: right;
-		margin: 0.5em 0;
+	margin: 0 20px 2px 0;
+	@include breakpoint(laptop) {
+		margin: 0 20px 2px 0;
+	}
+		ul {
+			margin: -0.5em 0;	
+			@include breakpoint(laptop) {
+				margin: -0.5em 0;	
+			}
+		}
 
 		li {
-			align: right;
+			float: right;
 			display: inline;
+			margin: 0 3px 0 3px;
+			@include breakpoint(laptop) {
+				float: right;
+				display: inline;
+				margin: 0 3px 0 3px;				
+			}
+
+			
+			img {
+				margin: 0 3px 0 0 ;
+				@include breakpoint(laptop) {
+					margin: 0 3px 0 0 ;	
+				}
+			}
 
 			a:link {
 				font-size: 13px;
@@ -14,5 +34,6 @@
 				text-decoration: none;
 			}
 		}
-	}
-}
+
+}	
+

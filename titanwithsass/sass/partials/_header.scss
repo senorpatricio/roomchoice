@@ -1,23 +1,64 @@
 .header {
 	height: 50px;
+	max-width: $standard;
+	margin: 0 auto;
+	@include breakpoint(laptop) {
+		width: 100%;
+		margin: 0 auto;
+	}
+	@include breakpoint(tablet) {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.header-left {
+		width: 450px;
+		@include breakpoint(laptop) {
+			width: 450px;	
+		}
+		@include breakpoint(tablet) {
+			width: 50%;
+		}
 
-		.header-left {
-			width: 160px;
-			
-			img {
+		img {
+			margin: 19px 0 0 0;
+			@include breakpoint(laptop) {
 				margin: 19px 0 0 0;
-			}
+			}	
+		}
+	}
+
+	.header-right {
+		width: 450px;
+		float: right;
+		@include breakpoint(laptop) {
+			width: 450px;
+			float: right;
+		}
+		@include breakpoint(tablet) {
+			width: 50%;
 		}
 
-		.header-right {
-
-			img {
+		img {
+			float: right;
+			margin: -68px 7px 0 0;
+			@include breakpoint(laptop) {
 				float: right;
-				margin: -68px 7px 0 0;
+				margin: -68px 7px 0 0;	
 			}
+			
 		}
+	}
 	.topline {
 		margin: -21px 11px 0 0;
 		float: right;
+		@include breakpoint(laptop) {
+			margin: -21px 11px 0 0;
+			float: right;
+		}
+		@include breakpoint(phone) {
+			display: none;
+		}
 	}
+	
 }

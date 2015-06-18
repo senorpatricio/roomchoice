@@ -1,24 +1,98 @@
 .lower-display .seo-content {
 	margin: 10px auto 0 auto;
+	@include breakpoint(laptop) {
+		margin: 10px auto 0 auto;
+	}
+	@include breakpoint(tablet) {
+		margin: 10px auto 0 auto;	
+	}
+	@include breakpoint(phone) {
+		margin: 10px auto 0 auto;
+	}	
+
 
 	.shadow {
 		margin: -10px 0 -10px 0;
 		position: absolute;
 	  z-index: -25;
+	  @include breakpoint(laptop) {
+	  	margin: -10px 0 -10px 0;
+			position: absolute;
+	  	z-index: -25;
+	  }
+	  @include breakpoint(tablet) {
+	  	margin: -10px 0 -10px 0;
+			position: absolute;
+	  	z-index: -25;	
+	  }
+	  @include breakpoint(phone) {
+	  	display: none;
+	  }
 	}
+
 	.seo-left-top {
 		width: 621px;
-		height: 241px;
 		margin: 18px 0px 0px 20px;
 		float: left;
+		@include breakpoint(laptop) {
+			width: 621px;
+			margin: 18px 0px 0px 20px;
+			float: left;
+		}
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
+		@include breakpoint(phone) {
+		  width: 100%;
+		  float: none;
+		  margin: 30px 0 10px 0;
+		}
+		
 
 		.seo-content1 {
 			width: 207px;
 			display: inline;
 			float: left;
+			@include breakpoint(laptop) {
+				width: 207px;
+				display: inline;
+				float: left;	
+			}
+			@include breakpoint(tablet) {
+				width: 33%;
+				display: inline;
+				float: left;	
+			}
+			@include breakpoint(phone) {
+			  width: 70%;
+			  display: block;
+			  float: none;
+			  margin: 0px auto;	
+			}
+
+			// @include breakpoint(phone) {
+			// 	width: 100%;
+			// 	display: block;
+			// 	padding: 30px;
+			// 	float: none;
+			// 	margin: 0 auto;
+			// }
+
+
 
 			.placeholder {
 				margin: 0 0 0 12px;
+				@include breakpoint(laptop) {
+					margin: 0 0 0 12px;
+				}		
+				@include breakpoint(tablet) {
+					width: 90%;
+					margin: 0 5px;
+				}	
+				@include breakpoint(phone) {
+					width: 100%;
+					margin: 0 auto 0 auto;
+				}
 			}
 
 			.seo-title {
@@ -26,6 +100,16 @@
 				font-size: 14px;
 				color: $steel-blue;
 				margin: 0 0 0 10px;
+				@include breakpoint(laptop) {
+					margin: 0 0 0 10px;
+					width: 190px;
+				}
+				@include breakpoint(tablet) {
+					margin: 0 auto;
+				}
+				@include breakpoint(phone) {
+					margin: 0 auto;
+				}
 			}
 
 			.seo-stuffing {
@@ -35,35 +119,83 @@
 			  line-height: 1.4;
 			  margin: 2px 0 0 0;
 			  text-align: justify;
-			}
 
+			  @include breakpoint(laptop) {
+			  	line-height: 1.4;
+				  margin: 2px 0 0 0;
+				  text-align: justify;
+				  padding: 0 0 0 10px;
+			  }
+			  @include breakpoint(tablet) {
+			  	padding: 0 10px 0 10px;
+			  }
+			  @include breakpoint(phone) {
+		  	  margin: 0 auto;
+					width: 75%;
+			  }
+			}
 		}
 
 	}
 
 	.seo-right {
 		width: 240px;
-		height: 382px;
+		// height: 382px;
 		margin: 18px 11px 0 0;
 		background: $white;
 		float: right;
-		border: 1px silver solid;
+		@include border-radius(4px);
+		@include breakpoint(laptop) {
+			width: 240px;
+			height: 382px;
+			margin: 18px 11px 0 0;
+			background: $white;
+			float: right;
+		}
+		@include breakpoint(tablet) {
+			@include border-radius(4px);
+			width: 40%;
+			margin: 10px 10px 0 5px;
+		}
 
+		@include breakpoint(phone) {
+			@include border-radius(4px);
+			width: 90%;
+			margin: 10px auto;
+			float: none;
+		}
+		
 		.seo-right-top {
 			height: 260px;
+			@include breakpoint(laptop) {
+				height: 260px;
+			}
 
 			.cool-title {
 				margin: 7px 7px 0 0;
 				text-align: center;
 				font-size: 14px;
 				color: $steel-blue;
+				@include breakpoint(laptop) {
+					margin: 7px 7px 0 0;
+					text-align: center;
+				}
 			}
 		}
 
 		.seo-right-bottom {
-
-			.pricing {
+			
+			img {
 				margin: -2px 0 0 34px;
+				@include breakpoint(laptop) {
+					margin: -2px 0 0 34px;
+				}
+				@include breakpoint(tablet) {
+					margin: 0 0 0 45px;
+				} 
+				@include breakpoint(phone) {
+					margin: 0 0 0 120px;
+				}
 			}
 
 			.made-in-usa {
@@ -73,8 +205,26 @@
 		  	text-align: center;
 		  	font-size: 11px;
 		  	line-height: 1.4;
+		  	@include breakpoint(laptop) {
+		  		width: 205px;
+					margin: 5px 0 0 19px;
+			  	text-align: center;
+			  	line-height: 1.4;
+		  	}
+		  	@include breakpoint(tablet) {
+		  		width: 95%;
+					margin: 5px 0 0 5px;
+			  	text-align: center;
+			  	line-height: 1.1;
+		  	}
+		  	@include breakpoint(phone) {
+		  		width: 95%;
+					margin: 5px 0 0 5px;
+			  	text-align: center;
+			  	line-height: 1.1;
+		  	}
 			}
-
+			
 		}
 
 	}
@@ -83,11 +233,32 @@
 		height: 142px;
 		margin: 0 0 0 20px;
 		float: left;
+		@include breakpoint(laptop) {
+			width: 621px;
+			height: 142px;
+			margin: 0 0 0 20px;
+			float: left;
+		}
+		@include breakpoint(tablet) {
+			width: 55%;
+			margin: 10px auto;
+		} 
+		@include breakpoint(phone) {
+			width: 100%;
+		  margin: 10px auto;
+		  float: left;
+		  display: block;
+		  padding: 0 20px 0 20px;
+		} 
 
 		.seo-bottom-title {
 			font-size: 14px;
 			color: $steel-blue;
 			margin: 10px 0 0 8px;
+			@include breakpoint(laptop) {
+				margin: 10px 0 0 8px;
+			}
+			@include breakpoint(laptop) 
 		}
 
 		.seo-stuffing {
@@ -97,10 +268,26 @@
 			  line-height: 1.4;
 			  margin: 2px 0 0 0;
 			  text-align: justify;
+			  @include breakpoint(laptop) {
+			  	padding: 0 0 0 10px;
+				  line-height: 1.4;
+				  margin: 2px 0 0 0;
+				  text-align: justify;
+			  }
+			  @include breakpoint(phone) {
+
+			  }
 			}
 	}
 	.low-logo {
 		float: right;	
-		margin: 30px 49px 0 0;		
+		margin: 30px 49px 0 0;
+		@include breakpoint(laptop) {
+			float: right;	
+			margin: 30px 49px 0 0;
+		}		
+		@include breakpoint(tablet) {
+			margin: 45px 49px 0 0;
+		}
 	}
 }

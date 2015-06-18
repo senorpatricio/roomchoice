@@ -1,81 +1,257 @@
 .lower-display .social-banner {
+	width: $standard;
 	border: 0 0 1px 0 solid $gray;
-	height: 60px;
+	height: 60px;	
+	
+	@include breakpoint(laptop) {
+		border: 0 0 1px 0 solid $gray;
+		height: 60px;	
+	}
+	@include breakpoint(tablet) {
+		border: 0 0 1px 0 solid $gray;
+		height: 60px;	
+		width: 100%;
+	}
+	
+
+
 
 	.social-left {
+		width: 50%;
 		font-size: 21px;
 		color: $gray;
 		float: left;
-		margin: -19px 18px 0 23px;
+		margin: 0;
+		@include breakpoint(laptop) {
+			width: 50%;
+			font-size: 21px;
+			color: $gray;
+			float: left;
+			margin: 0;
+		}
+		@include breakpoint(tablet) {
+			width: 50%;
+		}
+		
+		@include breakpoint(phone) {
+			float: left;
+	  	margin: 0;
+	  	padding: 0;
+	  	width: 100%;
+		}
+
 
 		.some-words{
 			list-style: none;
-			margin: 22px 0 0 -41px;
+			margin: 5px 0 0 0;
+			@include breakpoint(laptop) {
+				list-style: none;
+				margin: 5px 0 0 0;
+			}
+			@include breakpoint(tablet) {
+				margin: 0;
+			}
+			@include breakpoint(phone) {
+				margin: 0;
+			}
 
 			li {
 				display: inline;
+				@include breakpoint(laptop) {
+					display: inline;
+				}
+				@include breakpoint(tablet) {
+					display: inline;
+				}
 			}
 			img {
 				margin: 9px 0 0 0;
+				@include breakpoint(laptop) {
+					margin: 9px 0 0 0;
+				}
+				@include breakpoint(tablet) {
+					margin: 0;
+				}
 			}
 		}
 	}
 
 
 	.social-right {
+		width: 50%;
 		float: right;
-		color: gray;
+		color: $gray;
 		font-size: 13px;
-		padding: 10px;
-		margin: -9px 16px 0 0;
+		padding: 0;
+		margin: 0;
+		text-align: right;
+		@include breakpoint(laptop) {
+			width: 50%;
+			float: right;
+			color: gray;
+			font-size: 13px;
+			padding: 0;
+			margin: 0;
+		}
+		@include breakpoint(tablet) {
+			width: 50%;
+		}
+		@include breakpoint(phone) {
+			float: left;
+	  	margin: 0;
+	  	padding: 0;
+	  	width: 100%;
+		}
 
 		img {
+			float: right;
 			margin: 0 0 0 7px;
+			@include breakpoint(laptop) {
+				float: right;
+				margin: 0 0 0 7px;
+			}
 		}
+		
+		
+		// @include breakpoint(tablet) {
+		// 	float: right;
+	 //  	margin: 0;
+	 //  	padding: 0;
+		// }
+		// img {
+		// 	margin: 0 0 0 7px;
+		// }
 	}
 }
 
 
 .lower-display .who-section {
-	height: 350px;
+	width: 100%;
 	margin: 0 auto 0 auto;
 	padding: 10px 0 0 0;
+
+	@include breakpoint(laptop) {
+		width: 100%;
+		margin: 0 auto 0 auto;
+		padding: 10px 0 0 0;
+	}
+	@include breakpoint(tablet) {
+		width: 100%;
+	}
+	@include breakpoint(phone) {
+		width: 100%;
+	}
+	
+
 
 	.shadow {
 		position: absolute;
 		z-index: -25;
 		margin: -8px 0px 0px 0px;
+		@include breakpoint(laptop) {
+			position: absolute;
+			z-index: -25;
+			margin: -8px 0px 0px 0px;
+		}
+		@include breakpoint(phone) {
+			display: none;
+		}
+		
 	}
 
 	.who-one {
 		width: 205px;
-		height: 300px;
 		margin: 1px 10px 1px 10px;
 		float: left;
+		@include breakpoint(laptop) {
+			width: 205px;
+			height: 300px;
+			margin: 1px 10px 25px 10px;
+			float: left;
+		}
+		@include breakpoint(tablet) {
+			width: 50%;
+			margin: 0 auto;
+			padding: 0 40px 0 40px;
+		}
+		@include breakpoint(phone) {
+			width: 100%;
+			margin: 0 auto 40px auto;
+			display: block;
+			padding: 30px;
+		}
 
 		.flag {
 			margin: 0 7px 0 16px;
+			@include breakpoint(laptop) {
+				margin: 0 7px 0 16px;
+			}
+			@include breakpoint(tablet) {
+				margin: 0 auto;
+				display: block;
+			}
+			@include breakpoint(phone) {
+				margin: 0 auto;
+				width: 75%;
+			}
+			
 		}
 
 		.who-title {
 			color: $steel-blue;
 			font-style: bold;
 			font-size: 14px;
-			margin: 0 0 0 0;
+			margin: 0;
+			@include breakpoint(laptop) {
+				margin: 0;	
+			}			
+			@include breakpoint(tablet) {
+
+			}
 		}
 
 		.blurb {
-			padding: 0 0 0 17px;
-		  font-size: 13px;
+			font-size: 13px;
 		  color: $gray;
-		  line-height: 1.4;
+		  padding: 0 0 0 17px;	
+			line-height: 1.4;
 		  margin: 2px 0 0 0;
 		  text-align: justify;
+			@include breakpoint(laptop) {
+				padding: 0 0 0 17px;	
+				line-height: 1.4;
+			  margin: 2px 0 0 0;
+			  text-align: justify;
+			}
+			@include breakpoint(tablet) {
+				padding: 0 0 0 17px;
+				line-height: 1.1;
+			  margin: 2px 0 0 0;
+			  text-align: justify;
+			}
+			@include breakpoint(phone) {
+				width: 75%;
+				line-height: 1.1;
+			  margin: 2px auto 0 auto;
+			  text-align: justify;
+			  padding: 0;
+			}
 		}
 
 		.icon {
 			float: left;
-			margin: 0 8px 0 18px;
+			margin: 0 8px 0 18px;	
+			@include breakpoint(laptop) {
+				float: left;
+				margin: 0 8px 0 18px;	
+			}
+			@include breakpoint(tablet) {
+				float: left;
+			}
+			@include breakpoint(phone) {
+				float: left;
+				padding: 0 0 0 30px;
+			}
 		}
 	}
 }

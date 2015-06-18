@@ -1,14 +1,15 @@
 @import "compass";
 
+@import "partials/mixins";
 @import "partials/variables";
 @import "partials/normalize";
-@import "partials/mixins";
 @import "partials/base";
 @import "compass/css3";
 
 @import "partials/header";
 
 @import "partials/banner";
+// @import "partials/hamburger";
 @import "partials/middle";
 @import "partials/footer";
 @import "partials/navbar";

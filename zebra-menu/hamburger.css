@@ -1,0 +1,110 @@
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.zebra-nav-logo {
+  background-color: black;
+  display: block;
+  height: 60px;
+  padding: 3px 4px 3px;
+  position: relative;
+  width: 100%;
+}
+
+.zebra-nav-logo .fa-bars {
+  color: white;
+  margin: 5px 10px 0 0;
+}
+
+.zebra-nav-logo h2 {
+  color: white;
+  margin: 0 0 0 10px;
+}
+
+/*
+The navigation container in the background
+*/
+nav {
+  opacity: 0;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  z-index: 0;
+  width: 40%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #F3BD1C;
+}
+
+/*
+Style the navigation menu
+*/
+nav ul {
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+nav li {
+  position: relative;
+  font-size: 1.3em;
+  /*font-weight: bold;*/
+  border-bottom: 1px solid #222222;
+  /*border-top: 1px solid #444444;*/
+  padding: 15px;
+}
+nav li.menu-zebra-logo {
+  background-color: #000;
+  color: white;
+}
+nav li a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav .mobile-menu .link:hover {
+  background-color: white;
+}
+
+nav ul li.related-media {
+  background-color: #363A3D;
+  color: white;
+  font-size: .8em;
+}
+
+nav ul.mobile-related-media li {
+  border: none;
+}
+
+
+nav ul.mobile-related-media a {
+  color: white;
+}
+
+nav ul.mobile-related-media i {
+  margin: 0 10px 0 0;
+}
+
+nav .mobile-menu .zebra-knowledge {
+  background-color: gray;
+}
+
+nav .mobile-menu .zebra-knowledge i {
+  color: #363A3D;
+  margin: 0 10px 0 0 
+}
+

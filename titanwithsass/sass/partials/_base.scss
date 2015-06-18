@@ -1,24 +1,60 @@
 body {
 	background-color: $light-gray;
-	font-family: Helvetica;
+	font-family: Helvetica, sans-serif, Arial;
+
 
 	.top-display, .lower-display {
-		width: 900px;
 		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		color: $gray;
+		margin: 0 auto;
+		width: $standard;
+		color: $gray;	
+		@include breakpoint(laptop) {
+			display: block;
+			margin: 0 auto;
+			width: $standard;
+			color: $gray;	
+		}
+		@include breakpoint(tablet) {
+			width: 100%;
+			margin: 0 auto;
+		}
+		@include breakpoint(phone) {
+			width: 100%;
+			margin: 0 auto;
+		}
+		
+		// @include breakpoint(phone) {
+		// 	width: 100%;
+		// 	margin: 0 auto;
+		// }
+		// @include breakpoint(tablet) {
+		// 	width: 100%;
+		// 	margin: 0 auto;
+		// }
+		// @include breakpoint(laptop) {
+		// 	max-width: 900px;
+		// 	margin: 0 auto;
+		// }
 	}
 
 }
 
 
-// * {
-// 	-webkit-box-sizing: border-box;
-// 	-moz-box-sizing: border-box;
-// 	box-sizing: border-box;
-// }
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 .clear {
 	clear: both;
+}
+
+img {
+	@include border-radius(4px);
+}
+.shadow {
+	@include breakpoint(phone) {
+		display: none;
+	}
 }

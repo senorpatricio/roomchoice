@@ -1,18 +1,62 @@
 .lower-display .footer {
 	height: 120px;
-	margin: 80px 1px 0px 0px;	
+	margin: 80px 1px 0px 0px;
+	@include breakpoint(laptop) {
+		height: 120px;
+		margin: 80px 1px 0px 0px;
+	}
+
+	@include breakpoint(tablet) {
+		width: 100%;
+	}
+
+	.big-white-box {
+		@include breakpoint(tablet) {
+			display: none;
+			margin: 20px auto;
+		}
+		@include breakpoint(phone) {
+			display: none;
+		}
+	}
 
 	.company-bar {
+		width: 90%;
 		position: absolute;
 		display: inline;
 		margin: -100px 0 0 34px;
+		@include breakpoint(laptop) {
+			width: 90%;
+			position: absolute;
+			display: inline;
+			margin: -100px 0 0 34px;
+		}
+
+		@include breakpoint(tablet) {
+			@include border-radius(4px);
+			position: relative;
+			padding: 20px 0 0 0;
+			float: none;
+			width: 90%;
+			height: 150px;
+			background-color: $white;
+			display: block;
+			margin: 20px auto 0 auto;
+		}
 
 		ul {
 			margin: 0;
+			@include breakpoint(laptop) {
+				margin: 0;
+			}
 
 			li {
 				display: inline;
 				margin: 0 0 0 18px;
+				@include breakpoint(laptop) {
+					display: inline;
+					margin: 0 0 0 18px;
+				}
 			}
 		}
 	}
@@ -23,18 +67,44 @@
 	position: absolute;
 	width: 888px;
 	margin: -69px 0px 0 -18px;
+	@include breakpoint(laptop) {
+		position: absolute;
+		width: 888px;
+		margin: -69px 0px 0 -18px;
+	}
+	@include breakpoint(tablet) {
+		width: 90%;
+		float: none;
+		@include border-radius(4px);
+		background-color: $steel-blue;
+		margin: 32px;
+	}
+
+	li {
+		display: inline;
+		color: white;
+		font-size: 12px;
+		@include breakpoint(laptop) {
+			display: inline;
+		}
+		@include breakpoint(tablet) {
+			display: inline;
+		}
+	}
+
+	.contact {
+		float: left;
+		@include breakpoint(laptop) {
+			float: left;
+			margin: 0 10px 0 0;
+		}
+	}
+	.our-clients {
+		float: right;
+		@include breakpoint(laptop) {
+			float: right;
+			margin: 0 10px 0 0;
+		}
+	}
 }
 
-.lower-display .blue-bar li {
-	display: inline;
-	color: white;
-	font-size: 12px;
-}
-
-.lower-display .blue-bar .contact {
-	float: left;
-}
-
-.lower-display .blue-bar .our-clients {
-	float: right;
-}

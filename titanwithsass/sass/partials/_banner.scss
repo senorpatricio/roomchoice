@@ -3,10 +3,25 @@
 	margin: -3px auto 20px auto;
 	border: 5px solid $white;
 	box-shadow: 2px 2px 2px 2px #888888;
+	@include border-radius(4px);
+
+	@include breakpoint(laptop) {
+		display: block;
+		margin: -3px auto 20px auto;
+		border: 5px solid $white;
+		box-shadow: 2px 2px 2px 2px #888888;
+		@include border-radius(4px);
+		max-width: 95%;
+	}
 }
 
 .top-display .banner-section .circles {
 	display: block;
 	margin: 0 auto 10px auto;
 	background-color: $light-gray;
+	
+	@include breakpoint(laptop) {
+		display: block;
+		margin: 0 auto 10px auto;
+	}
 }
